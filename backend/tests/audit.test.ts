@@ -100,7 +100,7 @@ describe('Stage 7 — Audit Logging and Security Event Stream', () => {
         credentialSecret: 'cred_secret_val',
         cookie: 'alsh_refresh_session=cookie_val',
         authorization: 'Bearer secret_jwt_token',
-        connectionString: 'mongodb+srv://admin:pass@cluster.mongodb.net',
+        connectionString: 'mongodb://127.0.0.1:27017/fake_test_db',
         nested: {
           clientSecret: 'secret_nested',
           safeField: 'harmless_info',

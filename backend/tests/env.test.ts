@@ -7,7 +7,7 @@ describe('Environment Configuration Validation', () => {
       NODE_ENV: 'test',
       PORT: '5001',
       CLIENT_ORIGIN: 'http://localhost:5173',
-      MONGODB_URI: 'mongodb+srv://user:pass@cluster.mongodb.net/testdb',
+      MONGODB_URI: 'mongodb://127.0.0.1:27017/fake_test_db',
       JWT_ACCESS_SECRET: 'super_secret_jwt_access_token_key_12345',
       JWT_ACCESS_EXPIRES_IN: '15m',
       REFRESH_TOKEN_EXPIRES_DAYS: '7',
