@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+coverage/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Git backup
+.git-backup/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Private keys and certificates
+*.pem
+*.key
+
+# Local files
+.DS_Store
+Thumbs.db
