@@ -87,27 +87,19 @@ export const DashboardOverviewPage: React.FC = () => {
 
   return (
     <div className="space-y-8 sm:space-y-9">
-      {/* Welcome Banner - Refined Compact Height & Vertical Alignment */}
-      <div className="rounded-2xl border border-indigo-100/90 bg-gradient-to-br from-indigo-50/75 via-violet-50/45 to-sky-50/60 p-6 sm:p-7 lg:p-8 shadow-xs">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
-          <div className="space-y-2.5 max-w-3xl">
-            <div className="flex flex-wrap items-center gap-2">
-              <Badge variant="brand" dot size="sm">
-                Platform Owner Active
-              </Badge>
-              <Badge variant="success" dot size="sm">
-                MongoDB Atlas Connected
-              </Badge>
-            </div>
-            <h1 className="text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-slate-900 tracking-tight leading-tight">
-              Welcome back, {user?.name || 'Developer'}
+      {/* Welcome Banner - Clean, Compact & Properly Aligned */}
+      <div className="rounded-2xl border border-indigo-100/90 bg-gradient-to-br from-indigo-50/75 via-violet-50/45 to-sky-50/60 p-6 sm:p-7 shadow-xs">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
+          <div className="space-y-1.5 max-w-2xl">
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              Welcome back, {user?.name || 'Alex'}
             </h1>
             <p className="text-[15px] sm:text-[16px] text-slate-600 leading-relaxed">
-              Authenticated as <span className="text-slate-900 font-semibold">{user?.email}</span>. ALSH manages your API credentials, project tenant isolation, and cryptographic security hygiene in real time.
+              Manage your projects, team access, and account settings from one simple dashboard.
             </p>
           </div>
 
-          <div className="flex items-center self-start md:self-center flex-shrink-0 pt-1 md:pt-0">
+          <div className="flex items-center self-start sm:self-center flex-shrink-0">
             <Link to="/projects">
               <Button
                 variant="primary"
